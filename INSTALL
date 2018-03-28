@@ -1,0 +1,11 @@
+# Installation of OD-Seq on GNU/Linux
+
+    ./configure
+    make
+    sudo make install
+
+You may specify another installation path by using the
+`--prefix=path` to `configure` as such:
+
+    ./configure --prefix=$HOME/bin
+
