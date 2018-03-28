@@ -23,11 +23,12 @@ bool isFloat(string myString) {
 
 void display_help(){
 	cout << "OutDet 1.0" << endl << endl;
-	cout << "Usage: OutDet [-hv] [-i <file>] [-r <file>] [-c <file>] [-o <file>] [-f {fa[sta],clu[stal],st[ockholm],vie[nna],msf,phy[lip],selex] [--dist-in <file>] [-a {boot,iqr}] [--boot-rep <n>] [-m {linear,affine,cumulative}] [-t <n>] [--full] [--matrix-out <file>] [-s <n>]" << endl << endl;
+	cout << "Usage: OutDet [-hv] [-i <file>] [-r <file>] [-c <file>] [-o <file>] [-f {fa[sta],clu[stal],st[ockholm],vie[nna],msf,phy[lip],selex] [--dist-in <file>] [-a {boot,iqr}] [--boot-rep <n>] [-m {linear,affine,cumulative}] [-t <n>] [--full] [--matrix-out <file>] [-s <n>] [--unaligned]" << endl << endl;
 	cout << "Input options:" << endl;
 	cout << "  -i, --input             Multiple sequence alignment file" << endl;
 	cout << "  -f, --format            Multiple sequence alignment format (fa[sta],clu[stal],st[ockholm],vie[nna],msf,phy[lip],selex) (default auto)" << endl;
-	cout << "  --dist-in               Distance matrix input (clustal omega format)" << endl << endl;
+	cout << "  --dist-in               Distance matrix input (clustal omega format)" << endl;
+	cout << "  --unaligned             Unaligned input sequences" << endl << endl;
 	cout << "Distance matrix options:" << endl;
 	cout << "  -m, --metric            Distance metric (linear, affine, cumulative) (default linear" << endl;
 	cout << "  -t, --threads           Number of threads used (0 for maximum available, default 1)" << endl;
