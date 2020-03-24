@@ -1,0 +1,19 @@
+runtimeargs.o: runtimeargs.cpp runtimeargs.h util.h
+ODseq.o: ODseq.cpp ODseq.h runtimeargs.h util.h AliReader.h Protein.h \
+ DistCalc.h PairwiseAl.h DistWriter.h Bootstrap.h ResultWriter.h \
+ DistMatReader.h IQR.h FastaWriter.h
+PairwiseAl.o: PairwiseAl.cpp PairwiseAl.h Protein.h util.h
+Protein.o: Protein.cpp Protein.h
+FastaWriter.o: FastaWriter.cpp FastaWriter.h AliReader.h Protein.h \
+ runtimeargs.h util.h
+DistMatReader.o: DistMatReader.cpp DistMatReader.h Protein.h util.h
+DistWriter.o: DistWriter.cpp DistWriter.h AliReader.h Protein.h \
+ runtimeargs.h util.h DistCalc.h PairwiseAl.h
+ResultWriter.o: ResultWriter.cpp ResultWriter.h DistMatReader.h Protein.h \
+ util.h IQR.h runtimeargs.h AliReader.h Bootstrap.h
+DistCalc.o: DistCalc.cpp DistCalc.h Protein.h runtimeargs.h util.h \
+ PairwiseAl.h
+IQR.o: IQR.cpp IQR.h Protein.h
+Bootstrap.o: Bootstrap.cpp Bootstrap.h Protein.h runtimeargs.h util.h
+AliReader.o: AliReader.cpp AliReader.h Protein.h runtimeargs.h util.h
+util.o: util.cpp util.h
